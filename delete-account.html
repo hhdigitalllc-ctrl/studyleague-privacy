@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delete Your Account — Study League</title>
+  <meta name="description" content="Request deletion of your Study League account and associated data." />
+  <style>
+    :root {
+      --bg: #f6f4fe;
+      --card: #ffffff;
+      --ink: #0b0d24;
+      --ink-soft: #4a4d68;
+      --ink-faint: #8a8ea8;
+      --hairline: #ece7fa;
+      --violet: #6448f7;
+      --violet-deep: #4b32d6;
+      --red: #e03e3e;
+      --red-bg: #fff5f5;
+      --red-border: #ffd0d0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0d24;
+        --card: #131632;
+        --ink: #f2f0fb;
+        --ink-soft: #b8bad2;
+        --ink-faint: #7a7d97;
+        --hairline: #232647;
+        --violet: #8a74ff;
+        --violet-deep: #a897ff;
+        --red: #ff6b6b;
+        --red-bg: #1a0a0a;
+        --red-border: #4a1a1a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", "Tajawal",
+        "Noto Sans Arabic", sans-serif;
+      line-height: 1.85;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 700px; margin: 0 auto; padding: 32px 20px 80px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--hairline);
+      border-radius: 22px;
+      padding: 32px;
+      margin-bottom: 26px;
+    }
+    .card.danger {
+      background: var(--red-bg);
+      border-color: var(--red-border);
+    }
+    header.masthead {
+      text-align: center;
+      padding: 40px 20px 24px;
+    }
+    header.masthead .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--violet) 15%, transparent);
+      color: var(--violet-deep);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+    header.masthead h1 {
+      font-size: 28px;
+      margin: 14px 0 6px;
+      font-weight: 900;
+    }
+    header.masthead .sub {
+      color: var(--ink-faint);
+      font-size: 15px;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 0 0 12px;
+      font-weight: 800;
+    }
+    h2.danger { color: var(--red); }
+    p, li { font-size: 15.5px; color: var(--ink-soft); }
+    p, ul { margin: 8px 0 12px; }
+    ul { padding-left: 22px; }
+    strong { color: var(--ink); font-weight: 700; }
+    a { color: var(--violet); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--violet) 15%, transparent);
+      color: var(--violet-deep);
+      font-weight: 800;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-body { flex: 1; }
+    .step-body strong { display: block; margin-bottom: 2px; }
+    .email-btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 24px;
+      background: var(--violet);
+      color: #fff;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .email-btn:hover { opacity: 0.9; text-decoration: none; }
+    .footer {
+      text-align: center;
+      color: var(--ink-faint);
+      font-size: 13px;
+      margin-top: 40px;
+    }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin: 8px 0 24px;
+    }
+    .lang-switch a {
+      padding: 8px 16px;
+      border: 1px solid var(--hairline);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .lang-switch a:hover { background: var(--hairline); }
+    .arabic { direction: rtl; text-align: right; }
+    .arabic ul { padding-right: 22px; padding-left: 0; }
+    hr { border: none; border-top: 1px solid var(--hairline); margin: 40px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <span class="badge">Study League</span>
+      <h1>Delete Your Account</h1>
+      <div class="sub">We're sorry to see you go. Here's how to request deletion.</div>
+    </header>
+
+    <div class="lang-switch">
+      <a href="#en">English</a>
+      <a href="#ar">العربية</a>
+    </div>
+
+    <!-- ENGLISH -->
+    <section id="en">
+      <div class="card">
+        <h2>How to request account deletion</h2>
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <strong>Send us an email</strong>
+            Email <a href="mailto:peakdev26@gmail.com">peakdev26@gmail.com</a> with the subject line
+            <strong>"Account Deletion Request"</strong>.
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <strong>Include your username or registered email</strong>
+            So we can locate and verify your account.
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <strong>We'll confirm and delete within 30 days</strong>
+            You'll receive a confirmation email once the deletion is complete.
+          </div>
+        </div>
+        <a class="email-btn" href="mailto:peakdev26@gmail.com?subject=Account%20Deletion%20Request">
+          Email us to delete my account
+        </a>
+      </div>
+
+      <div class="card danger">
+        <h2 class="danger">What gets deleted</h2>
+        <ul>
+          <li>Your account profile (username, email, avatar)</li>
+          <li>Your rank points and exercise history</li>
+          <li>Your solution photos and AI grading results</li>
+          <li>Your credits balance</li>
+        </ul>
+        <h2 style="font-size:16px; margin-top:16px;">What is retained</h2>
+        <ul>
+          <li><strong>Payment records</strong> are kept for 5 years for accounting and legal compliance. These do not contain your card details.</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ARABIC -->
+    <section id="ar" class="arabic">
+      <div class="card">
+        <h2>كيف تطلب حذف حسابك</h2>
+        <div class="step" style="flex-direction: row-reverse;">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <strong>أرسل لنا بريدا إلكترونيا</strong>
+            راسلنا على <a href="mailto:peakdev26@gmail.com">peakdev26@gmail.com</a> مع عنوان الرسالة
+            <strong>"طلب حذف الحساب"</strong>.
+          </div>
+        </div>
+        <div class="step" style="flex-direction: row-reverse;">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <strong>أرفق اسم المستخدم أو البريد الإلكتروني المسجّل</strong>
+            حتى نتمكّن من التحقّق من هويّتك.
+          </div>
+        </div>
+        <div class="step" style="flex-direction: row-reverse;">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <strong>سنؤكّد الحذف خلال 30 يوما</strong>
+            ستصلك رسالة تأكيد بعد اكتمال عملية الحذف.
+          </div>
+        </div>
+        <a class="email-btn" href="mailto:peakdev26@gmail.com?subject=%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8">
+          راسلنا لحذف حسابي
+        </a>
+      </div>
+
+      <div class="card danger">
+        <h2 class="danger">ما الذي يُحذف</h2>
+        <ul>
+          <li>ملفك الشخصي (اسم المستخدم، البريد الإلكتروني، الصورة)</li>
+          <li>نقاط ترتيبك وسجلّ تمارينك</li>
+          <li>صور حلولك ونتائج التصحيح</li>
+          <li>رصيدك من التمارين</li>
+        </ul>
+        <h2 style="font-size:16px; margin-top:16px;">ما يُحتفظ به</h2>
+        <ul>
+          <li><strong>سجلّات الدفع</strong> تُحتفظ بها 5 سنوات لأغراض محاسبية وقانونية. لا تتضمّن تفاصيل بطاقتك.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer">
+      &copy; 2026 Study League &nbsp;·&nbsp;
+      <a href="index.html">Privacy Policy</a>
+    </div>
+  </div>
+</body>
+</html>
