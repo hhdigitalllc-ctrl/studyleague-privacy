@@ -129,7 +129,7 @@
     <header class="masthead">
       <span class="badge">Study League</span>
       <h1>سياسة الخصوصية · Privacy Policy</h1>
-      <div class="date">آخر تحديث · Last updated: 4 October 2026</div>
+      <div class="date">آخر تحديث · Last updated: 15 October 2026</div>
     </header>
 
     <div class="lang-switch">
@@ -168,7 +168,8 @@
         <ul>
           <li>محاولاتك ودرجاتك وملاحظات الذكاء الاصطناعي</li>
           <li>نقاط ترتيبك ومستواك</li>
-          <li>عمليات شرائك للتمارين</li>
+          <li>اشتراكك (Study Pass) وحالة تجربتك المجانية، وعمليات الشراء السابقة</li>
+          <li>إجاباتك في أسئلة التعارف عند البدء (الشعبة، المعدّل المستهدف، الصعوبات، ومدّة المراجعة اليومية)، نستخدمها لتخصيص تجربتك</li>
           <li>مشاركتك في غرف التحدي مع مستخدمين آخرين</li>
           <li>سلاسل مواظبتك، إعجاباتك، محفوظاتك</li>
         </ul>
@@ -186,6 +187,12 @@
           <li>نظام تشغيل جهازك وإصداره</li>
           <li>إصدار التطبيق</li>
           <li>معرّف الجهاز لإرسال الإشعارات (رمز Firebase Cloud Messaging)، ويُحفظ مرتبطا بحسابك</li>
+          <li>
+            <strong>معرّف أندرويد (Android ID) لمنع تكرار التجربة المجانية:</strong>
+            لا نحفظه كما هو، بل نحفظ <strong>بصمة مشفّرة أحادية الاتجاه (hash)</strong>
+            لا يمكن إرجاعها إلى المعرّف الأصلي، ونحفظ أيضا صيغة موحّدة للبريد الإلكتروني
+            (بأحرف صغيرة ودون الرموز بعد علامة +) لنفس الغرض. التجربة المجانية يوم واحد لكل جهاز ولكل شخص.
+          </li>
         </ul>
       </div>
 
@@ -194,7 +201,7 @@
         <ul>
           <li>
             <strong>تشغيل الخدمة الأساسية:</strong> تصحيح حلولك، حساب نقاط
-            الترتيب، إدارة رصيدك من التمارين.
+            الترتيب، إدارة اشتراكك وتجربتك المجانية.
           </li>
           <li>
             <strong>تحسين جودة التصحيح:</strong> قد نراجع بعض المحاولات — بعد
@@ -235,7 +242,7 @@
 
         <h3>Chargily Pay (شركة جزائرية)</h3>
         <p>
-          عند شرائك تمارين ببطاقة الذهبية أو CIB، تعالج Chargily الدفع مباشرة.
+          عند شرائك اشتراكا ببطاقة الذهبية أو CIB، تعالج Chargily الدفع مباشرة. وإن اخترت الدفع عبر بريدي موب أو CCP فيتمّ التواصل معك عبر رسائل إنستغرام (Meta)، ونحتفظ بإثبات الدفع فقط.
           <strong>لا تصلنا تفاصيل بطاقتك في أيّ وقت.</strong>
         </p>
 
@@ -264,6 +271,7 @@
           <li><strong>بيانات الحساب:</strong> طيلة مدّة نشاط الحساب، ولمدّة 30 يوما بعد طلب الحذف.</li>
           <li><strong>صور حلولك:</strong> <strong>تُحذف تلقائيا فور انتهاء التصحيح</strong> (سواء نجح أو فشل). لا نحتفظ بأيّ صورة بعد إعادة النتيجة إليك. الصور المرفوعة التي لم تُصحَّح (مثلا بسبب إغلاق التطبيق فجأة) تُحذف تلقائيا خلال ساعات قليلة.</li>
           <li><strong>سجلات الدفع:</strong> تُحتفظ بها 5 سنوات وفقا لالتزامات محاسبية.</li>
+          <li><strong>بصمة الجهاز والبريد الموحّد (لمنع تكرار التجربة المجانية):</strong> تبقى بعد حذف حسابك دون أيّ رابط بهويّتك، لغرض الحماية من إساءة الاستخدام فقط.</li>
         </ul>
       </div>
 
@@ -364,7 +372,8 @@
         <ul>
           <li>Your attempts, scores, and AI feedback</li>
           <li>Rank points and tier</li>
-          <li>Purchases of exercise credits</li>
+          <li>Your subscription (Study Pass), free-trial status and past purchases</li>
+          <li>Your answers to the onboarding questions (stream, target average, challenges and daily study time), used to personalise your experience</li>
           <li>Participation in multiplayer rooms with other users</li>
           <li>Streak data, likes, saved exercises</li>
         </ul>
@@ -384,6 +393,13 @@
           <li>Device operating system and version</li>
           <li>App version</li>
           <li>A device token for notifications (Firebase Cloud Messaging), stored linked to your account</li>
+          <li>
+            <strong>Android ID, to prevent repeat free trials:</strong> we do
+            not keep it as is. We keep a <strong>one-way cryptographic hash</strong>
+            that cannot be reversed to the original ID, plus a normalised form of your
+            email address (lower-case, without anything after a + sign) for the same
+            purpose. The free trial is one day per device and per person.
+          </li>
         </ul>
       </div>
 
@@ -392,7 +408,7 @@
         <ul>
           <li>
             <strong>Running the core service:</strong> grading your solutions,
-            computing rank, managing your exercise balance.
+            computing rank, managing your subscription and free trial.
           </li>
           <li>
             <strong>Improving grading quality:</strong> we may review some
@@ -435,7 +451,7 @@
 
         <h3>Chargily Pay (Algerian company)</h3>
         <p>
-          When you buy exercises with Edahabia or CIB, Chargily processes the
+          When you buy a subscription with Edahabia or CIB, Chargily processes the
           payment directly. <strong>We never receive your card details.</strong>
         </p>
 
@@ -466,6 +482,7 @@
           <li><strong>Account data:</strong> for as long as your account is active, plus 30 days after a deletion request.</li>
           <li><strong>Solution photos:</strong> <strong>automatically deleted the moment grading finishes</strong> (whether it succeeded or failed). We never retain a photo after returning its result. Uploaded photos that never get graded (e.g. because the app was force-closed) are swept automatically within a few hours.</li>
           <li><strong>Payment records:</strong> kept for 5 years for accounting compliance.</li>
+          <li><strong>Device hash and normalised email (repeat-trial prevention):</strong> kept after you delete your account with no link to your identity, solely to protect against abuse.</li>
         </ul>
       </div>
 
